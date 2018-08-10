@@ -4,4 +4,6 @@ itsdangerous==0.24
 Jinja2==2.10
 jsonify==0.5
 MarkupSafe==1.0
+six==1.11.0
+unittest-xml-reporting==2.2.0
 Werkzeug==0.14.1

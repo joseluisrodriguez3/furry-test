@@ -1,7 +1,8 @@
 import app
 import unittest
+import xmlrunner
 
-class TestFunction1(unitest.TestCase):
+class TestFunction1(unittest.TestCase):
   """
   Functional testing the app
   """
@@ -21,5 +22,5 @@ class TestFunction1(unitest.TestCase):
     self.assertEqual(result,2)
 
 if __name__ == '__main__':
-  unittest.main()
+  unittest.main(testRunner=xmlrunner.XMLTestRunner(output="./python_unittests_xml"))
 
