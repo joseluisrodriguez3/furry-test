@@ -10,10 +10,15 @@ pipeline {
                 sh 'python --version'
             }
         }
-        stage('test') {
+        stage('unittest') {
             steps {
                 sh 'python --version'
             }
+        }
+    }
+    post {
+        always {
+            junit 'python_unittests_xml/**/*.xml'
         }
     }
 }
